@@ -194,7 +194,9 @@ a:hover {
 	background-color: -moz-rgba(0,0,0,0.75);
 	background-color: rgba(0,0,0,0.6);
 	color: #fff;
-	height: 100vh;
+  height: 100vh;
+  display: flex;
+  text-align: center;
 }
 
 .jump{
