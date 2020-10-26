@@ -26,22 +26,7 @@ $(document).ready(function(){
     /* End Menu */
 
 
-    /* Skil Progres */
-    $(window).on('scroll', function () {
-        $(".skill-item-progress .progres").each(function () {
-            var bottom_of_object = 
-            $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
-            $(window).scrollTop() + $(window).height();
-            var myVal = $(this).attr('data-value');
-            if(bottom_of_window > bottom_of_object) {
-                $(this).css({
-                  width : myVal
-                });
-            }
-        });
-    });
-    /* End Skil Progres */
+   
 
 
     /* Work */
@@ -78,39 +63,9 @@ $(document).ready(function(){
     /* End Work */
 
 
-    /* Slider Testimonials */
-    var testimonials = $(".testimoni-box");
-    testimonials.owlCarousel({
-        items: 4,
-        margin: 10,
-        dots: true,
-        autoplay: true,
-        loop: true,
-        responsiveClass: true,
-        responsive: {
-            0: {items: 1}, 
-            500: {items: 1}, 
-            1000: {items: 1}, 
-            1200: {items: 1}
-            }
-    });
-    /* End Slider Testimonials */
+   
 
 
-    /* Scroll To Top */
-    var win = $(window),
-        navbar = $('.navbar'),
-        scrollUp = $(".scroll-up");
-
-    win.on('scroll', function () {
-        if ($(this).scrollTop() >= 600) {
-            scrollUp.show(300);
-        } else {
-            scrollUp.hide(300);
-        }
-    });
-
-        // Back To 0 Scroll Top body
         scrollUp.on('click', function () {
             $("html, body").animate({ scrollTop: 0}, 1000);
         });
