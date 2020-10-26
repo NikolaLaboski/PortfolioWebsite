@@ -165,7 +165,7 @@ a:hover {
   transition: 1s;
 }
 .menu ul li a:hover {
-  color: #333;
+  color: cadetblue;
   transition: 0.5s;
 }
 
@@ -194,72 +194,20 @@ a:hover {
 	background-color: -moz-rgba(0,0,0,0.75);
 	background-color: rgba(0,0,0,0.6);
 	color: #fff;
-  height: 100vh;
-  display: flex;
-  text-align: center;
-}
-
-.jump{
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  margin: auto;
-}
-.jump span{
-  color:#fff;
-  padding: 5px;
-  display: table-cell;
-  text-shadow: 0 1px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 2px 5px rgba(0,0,.2) ;
-  animation: animate 1s linear infinite;                
-}
-@keyframes animate{
-  0%{
-      transform: translateY(0px);
-      text-shadow: 0 1px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 2px 5px rgba(0,0,.2) ;
-  }
-  50%{
-      transform: translateY(-20px);
-      text-shadow: 0 1px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 2px 0 #d8d8d8,
-               0 25px 5px rgba(0,0,.2) ;
-  }
-  100%{
-      transform: translateY(0px);
-  }
-}
-
-.jump span:nth-child(1){
-  animation-delay: .1s;
-}
-.jump span:nth-child(2){
-  animation-delay: .2s;
-}
-.jump span:nth-child(3){
-  animation-delay: .3s;
-}
-.jump span:nth-child(4){
-  animation-delay: .4s;
-}
-.jump span:nth-child(5){
-  animation-delay: .5s;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	padding: 18% 10%;
+	
 }
 
 
 .caption-enter{
-	padding-top: 18%;
-	padding-bottom: 2%;
 	text-align: center;
 }
 
 .social-intro {
-	padding-top: 10%;
+	padding-top: 1%;
 }
 .social-intro ul li {
 	display: inline-block;
